@@ -1,13 +1,23 @@
 #!/usr/bin/python3
 # 101-nqueens.py
 # Naheemah Bello
-"""Solving the N-queens puzzle involves finding all possible arrangements of N non-attacking queens on an NxN chessboard. This can be demonstrated through a Python script, denoted as "./101-nqueens.py N," where N is an integer greater than or equal to 4.
+"""Solves the N-queens puzzle.
 
-The puzzle is approached by utilizing two main attributes:
+Determines all possible solutions to placing N
+N non-attacking queens on an NxN chessboard.
 
-"board" (list): A list of lists that serves as a representation of the chessboard.
-"solutions" (list): A list of lists containing various solutions.
-These solutions are formatted as a list of queen positions, where each queen's location is represented as [row, column]. In other words, [r, c] specifies the row (r) and column (c) where a queen must be placed on the chessboard to ensure that no queens attack each other.
+Example:
+    $ ./101-nqueens.py N
+
+N must be an integer greater than or equal to 4.
+
+Attributes:
+    board (list): A list of lists representing the chessboard.
+    solutions (list): A list of lists containing solutions.
+
+Solutions are represented in the format [[r, c], [r, c], [r, c], [r, c]]
+where `r` and `c` represent the row and column, respectively, where a
+queen must be placed on the chessboard.
 """
 import sys
 
